@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <a href="orders.html" target="_blank">View Orders</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="addMenuItemSection">
+            <h2>Add Menu Item</h2>
+            <form id="addMenuItemForm" enctype="multipart/form-data">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="itemName" required>
+
+                <label for="itemDescription">Description:</label>
+                <textarea id="itemDescription" name="itemDescription" required></textarea>
+
+                <label for="itemPrice">Price:</label>
+                <input type="number" id="itemPrice" name="itemPrice" required>
+
+                <label for="file-upload">Upload Image:</label>
+                <input type="file" id="file-upload" name="file-upload" accept="image/*" required>
+
+                <button type="submit">Add Menu Item</button>
+            </form>
+            <div id="menuMessage"></div>
+        </section>
+
+        <section id="menuPreviewSection">
+            <h2>Menu Preview</h2>
+            <div id="menuPreviewList"></div>
+        </section>
+
+        <section id="addSpecialSection">
+            <h2>Add Special</h2>
+            <form id="addSpecialForm" enctype="multipart/form-data">
+                <label for="specialName">Special Name:</label>
+                <input type="text" id="specialName" name="specialName" required>
+
+                <label for="specialDescription">Description:</label>
+                <textarea id="specialDescription" name="specialDescription" required></textarea>
+
+                <label for="specialPrice">Price:</label>
+                <input type="number" id="specialPrice" name="specialPrice" required>
+
+                <label for="specialFileUpload">Upload Image:</label>
+                <input type="file" id="specialFileUpload" name="specialFileUpload" accept="image/*" required>
+
+                <button type="submit">Add Special</button>
+            </form>
+            <div id="specialMessage"></div>
+        </section>
+
+        <section id="specialsPreviewSection">
+            <h2>Specials Preview</h2>
+            <div id="specialsPreviewList"></div>
+        </section>
+    </main>
+
+    <script>
+        // Add Menu Item
+        document.getElementById('addMenuItemForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData();
+            formData.append('itemName', document.getElementById('itemName').value);
+            formData.append('itemDescription', document.getElementById('itemDescription').value);
+            formData.append('itemPrice', document.getElementById('itemPrice').value);
+            formData.append('file-upload', document.getElementById('file-upload').files[0]);
+            formData.append('currency', 'KES'); // Set default currency
+
+            fetch('http://localhost:5000/add_menu_item', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('menuMessage').innerText = data.message;
+                fetchMenuItems(); // Refresh menu preview
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        // Fetch Menu Items for Preview
+        function fetchMenuItems() {
+            fetch('http://localhost:5000/menu_items')
+                .then(response => response.json())
+                .then(menuItems => {
+                    const menuPreviewList = document.getElementById('menuPreviewList');
+                    menuPreviewList.innerHTML = '';
+                    menuItems.forEach(item => {
+                        menuPreviewList.innerHTML += `
+                            <div class="menu-item">
+                                <h3>${item.item_name}</h3>
+                                <p>${item.description}</p>
+                                <p>Price: ${item.price} ${item.currency}</p>
+ <img src="${item.image_path}" alt="${item.item_name}" />
+                            </div>
+                        `;
+                    });
+                })
+                .catch(error => console.error('Error fetching menu items:', error));
+        }
+
+        // Add Special
+        document.getElementById('addSpecialForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData();
+            formData.append('specialName', document.getElementById('specialName').value);
+            formData.append('specialDescription', document.getElementById('specialDescription').value);
+            formData.append('specialPrice', document.getElementById('specialPrice').value);
+            formData.append('specialFileUpload', document.getElementById('specialFileUpload').files[0]);
+            formData.append('currency', 'KES'); // Set default currency
+
+            fetch('http://localhost:5000/add_special', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('specialMessage').innerText = data.message;
+                fetchSpecials(); // Refresh specials preview
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        // Fetch Specials for Preview
+        function fetchSpecials() {
+            fetch('http://localhost:5000/specials')
+                .then(response => response.json())
+                .then(specials => {
+                    const specialsPreviewList = document.getElementById('specialsPreviewList');
+                    specialsPreviewList.innerHTML = '';
+                    specials.forEach(special => {
+                        specialsPreviewList.innerHTML += `
+                            <div class="special-item">
+                                <h3>${special.special_name}</h3>
+                                <p>${special.description}</p>
+                                <p>Price: ${special.price} ${special.currency}</p>
+                                <img src="${special.image_path}" alt="${special.special_name}" />
+                            </div>
+                        `;
+                    });
+                })
+                .catch(error => console.error('Error fetching specials:', error));
+        }
+
+        // Initial fetch for menu items and specials
+        fetchMenuItems();
+        fetchSpecials();
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/eabb1ca807.js" crossorigin="anonymous"></script>
+    <!-- flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <!-- MENU CSS -->
+
+    <link rel="stylesheet" href="/Css/my-cart.css">
+    <title>SpeedyServ</title>
+</head>
+<body>
+    <div class="my__cart-section">
+        <!-- ========================= NAVBAR SECTION ========================== -->
+        <section class="navbar__section">
+            <nav class="menu__nav">
+                <div class="nav__logo">
+                    <img src="/Assets/images/logo.png" alt="" id="logo">
+                    <h1 class="logo__name">
+                    <a href="#" id="logo_link"><span>Speedy</span>Srev</h1></a>
+                </div>
+
+                <div class="links__container">
+                    <ul class="nav__links">
+                        <li id="link"><a href="/Pages/Home.html">Home</a></li>
+                        <li id="link"><a href="/Pages/Menu.html">Menu</a></li>
+                        <li id="link"><a href="#">Contact Us</a></li>
+                        <li id="link"><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__buttons">
+                    <button class="cart__btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+
+                    <button class="logOut__btn">
+                        LogOut
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </div>
+            </nav>
+        </section>
+
+        <!-- ================================== MY CART HERO SECTION ======================= -->
+        <section class="hero__section">
+            <div class="hero__container">
+                <div class="hero__text">
+                    <h1 id="hero__title">My Cart</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================== MENU LIST SECTION ======================= -->
+         <section class="order__section">
+            <div class="menu__list-container relative overflow-x-auto">
+                <table class="item__table w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-2xl uppercase bg-gray-200 dark:bg-gray-700 text-gray-900">
+                        <tr>
+                            <th scope="col" class="px-16 py-3 font-bold">
+                                <span class="sr-only">Image</span>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Product
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Qty
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Price
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="cart-items bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="p-4">
+                                <img src="/Assets/images/item-img.jpeg" class="w-16 md:w-32 max-w-full h-25" alt="Apple Watch">
+                            </td>
+                            <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                                Apple Watch
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="flex items-center">
+                                    <button class="inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
+                                        <span class="sr-only">Quantity button</span>
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
+                                        </svg>
+                                    </button>
+                                    <div>
+                                        <input type="number" id="first_product" class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="1" required />
+                                    </div>
+                                    <button class="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
+                                        <span class="sr-only">Quantity button</span>
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                                $599
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline"><i class="fa-regular fa-trash-can text-2xl"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="coupon__container text-lg font-bold">
+                    <div class="input-wrapper">
+                        <input placeholder="Coupon code" class="input" name="text" type="text" />
+                        <button class="Subscribe-btn">
+                          Apply Coupon
+                        </button>
+                    </div>
+
+                    <button class="update_btn">Update Cart</button>
+                </div>
+
+                <div class="cart__totals-container relative overflow-x-auto h-50">
+                    <table class="cart__totals-table text-sm text-left rtl:text-right text-gray-500">
+                        <thead class="text-2xl uppercase bg-gray-200">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-gray-900">
+                                    CART TOTALS
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Subtotal
+                                </th>
+                                <td class="px-6 py-4">
+                                    $2999
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Discount
+                                </th>
+                                <td class="px-6 py-4">
+                                    $0
+                                </td>
+                            </tr>
+                            <tr class="bg-white h-20">
+                                <td class="px-6 py-4">
+                                    <button class="checkout__btn">
+                                        Checkout
+                                    </button>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+         </section>
+
+        <!-- ================================== FOOTER ======================== -->
+        <section class="footer___section">
+            <footer class="dark:bg-gray-900">
+                <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                    <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <a href="https://flowbite.com/" class="flex items-center">
+                            <img src="/Assets/images/logo.png" class="h-8 me-3 rounded-full" alt="Logo" />
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SpeedyServ</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Resources</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="Home.html" class="hover:underline">Home</a>
+                                </li>
+                                <li>
+                                    <a href="Menu.html" class="hover:underline">Menu</a>
+                                </li>
+                                <li>
+                                    <a href="Contact-us.html" class="hover:underline">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Follow us</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">FaceBook</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Legal</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                    </span>
+                    <div class="flex mt-4 sm:justify-center sm:mt-0">
+                        <a href="#" class="text-gray-500 hover:text-white ">
+                            <i class="fa-brands fa-facebook-f w-4 h-4"></i>
+                            <span class="sr-only">Facebook page</span>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white ms-5">
+                            <i class="fa-brands fa-square-instagram w-4 h-4"></i>
+                            <span class="sr-only">Instagram page</span>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white ms-5">
+                            <i class="fa-brands fa-square-x-twitter w-4 h-4"></i>
+                            <span class="sr-only">Twitter page</span>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white ms-5">
+                            <i class="fa-brands fa-linkedin w-4 h-4"></i>
+                            <span class="sr-only">Linkedin account</span>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </section>
+        
+    </div>
+</body>
+</html>

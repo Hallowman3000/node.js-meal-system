@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/eabb1ca807.js" crossorigin="anonymous"></script>
+    <!-- flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <!-- MENU CSS -->
+    <link rel="stylesheet" href="/Css/menu.css">
+    <title>SpeedyServ</title>
+</head>
+<body>
+    <div class="menu__container">
+        <!-- ========================= NAVBAR SECTION ========================== -->
+        <section class="navbar__section">
+            <nav class="menu__nav">
+                <div class="nav__logo">
+                    <img src="/Assets/images/logo.png" alt="" id="logo">
+                    <h1 class="logo__name">
+                        <a href="#" id="logo_link"><span>Speedy</span>Srev</h1></a>
+                </div>
+    
+                <div class="links__container">
+                    <ul class="nav__links">
+                        <li id="link"><a href="/Pages/Home.html">Home</a></li>
+                        <li id="link"><a href="/Pages/Menu.html">Menu</a></li>
+                        <li id="link"><a href="#">Contact Us</a></li>
+                        <li id="link"><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__buttons">
+                    <button class="cart__btn">
+                        <a href="/Pages/My-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </button>
+
+                    <button class="logOut__btn">
+                        LogOut
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </div>
+            </nav>
+        </section>
+
+        <!-- ================================== MENU HERO SECTION ======================= -->
+        <section class="hero__section">
+            <div class="hero__container">
+                <div class="hero__text">
+                    <h1 id="hero__title">Discover Your Next Meal in a Flash!</h1>
+                    <p id="hero__description">Explore our diverse menu filled with fresh flavors and quick bites, crafted to satisfy every craving.<br/> From comfort food to gourmet options, we bring delicious meals right to your doorstep—fast, fresh, and hassle-free</p>
+                </div>
+
+                <div class="hero_search">
+                    <form action="" class="hero__form">
+                        <button class="search__btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input id="hero__input" placeholder="Search by name" required="" type="text">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+         <!-- ================================= MENU CARDS SECTION ======================== -->
+        <section class="menu__cards-section">
+            <div class="menu__cards-container">
+                <div class="categories">
+                    <div class="categories__buttons">
+                        <button id="category__btn">All</button>
+                        <button id="category__btn">Specials</button>
+                        <button id="category__btn">Snacks</button>
+                        <button id="category__btn">Drinks</button>
+                        <button id="category__btn">Breakfast</button>
+                        <button id="category__btn">Lunch</button>
+                        <button id="category__btn">Dinner</button>
+                    </div>
+                </div>
+
+                <!-- Card container -->
+                <div class="menu__cards"></div>
+                
+                <!-- pagination -->
+                <div class="pagination"></div>
+            </div>
+        </section>
+
+        <!-- ======================================= FOOTER ================================ -->
+        <section class="footer___section">
+            <footer class="dark:bg-gray-900">
+                <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                    <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <a href="https://flowbite.com/" class="flex items-center">
+                            <img src="/Assets/images/logo.png" class="h-8 me-3 rounded-full" alt="Logo" />
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SpeedyServ</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Resources</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="Home.html" class="hover:underline">Home</a>
+                                </li>
+                                <li>
+                                    <a href="Menu.html" class="hover:underline">Menu</a>
+                                </li>
+                                <li>
+                                    <a href="Contact-us.html" class="hover:underline">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Follow us</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">FaceBook</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Legal</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                    </span>
+                    <div class="flex mt-4 sm:justify-center sm:mt-0">
+                        <a href="#" class="text-gray-500 hover:text-white ">
+                            <i class="fa-brands fa-facebook-f w-4 h-4"></i>
+                            <span class="sr-only">Facebook page</span>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white ms-5">
+                            <i class="fa-brands fa-square-instagram w-4 h-4"></i>
+                            <span class="sr-only">Instagram page</span>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white ms-5">
+                            <i class="fa-brands fa-square-x-twitter w-4 h-4"></i>
+                            <span class="sr-only">Twitter page</span>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white ms-5">
+                            <i class="fa-brands fa-linkedin w-4 h-4"></i>
+                            <span class="sr-only">Linkedin account</span>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </section>
+
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+</body>
+</html>

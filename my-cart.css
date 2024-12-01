@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+/* ======================================= NAVBAR ============================================ */
+
+.navbar__section {
+    background-color: #29013b;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu__nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__logo #logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.nav__logo h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#logo_link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav__logo h1 span {
+    color: #e74105;
+}
+
+.links__container {
+    height: 100px;
+    width: 500px;
+    align-content: center;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__links #link {
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav__links #link a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 500ms ease-in-out;
+}
+
+.nav__links #link a:hover {
+    padding: 5px;
+    border-bottom: solid #e74105 3px;
+}
+
+.nav__buttons {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart__btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: #e74105;
+}
+
+.cart__btn i {
+    font-size: 1.4rem;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.logOut__btn {
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    width: 130px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    background-color: #e74105;
+    color: #ffffff;
+    overflow: hidden;
+    transition: 400ms ease-in-out;
+}
+
+.logOut__btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 130px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #212121;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.logOut__btn:hover::before {
+    scale: 3;
+}
+  
+.cart__btn:hover,
+.logOut__btn:hover {
+    color: #fffefe;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+  
+.logOut__btn:active {
+    scale: 1;
+}
+
+/* ======================================= MY CART HERO SECTION ============================================ */
+.hero__section {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/images/my-cart-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__container {
+    height: 100%;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__text {
+    align-content: center;
+    color: #ffffff;
+}
+
+.hero__text #hero__title {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+#hero__description {
+    font-size: 1.3rem;
+}
+
+.hero_search {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__form button {
+    border: none;
+    background: none;
+    color: #e74105;
+    font-size: 1.2rem;
+}
+
+.hero__form {
+    position: relative;
+    height: 30%;
+    width: 30%;
+    align-content: center;
+    border-radius: 30px;
+    border: solid #e74105 1px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-inline: 0.8em;
+    background: #ffffff;
+    transition: 0.5s ease;
+}
+
+.hero__form #hero__input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    /* background: #ffffff; */
+}
+
+.hero__form:before {
+    content: "";
+    position: absolute;
+    background: #e74105;
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform 0.3s ease;
+}
+
+.hero__form:focus-within {
+    border-radius: 0px;
+}
+
+.hero__form #hero__input {
+    outline: none;
+}
+
+.hero__form:focus-within:before {
+    transform: scale(1);
+}
+
+/* =========================================== MENU LIST SECTION ===================================== */
+.order__section{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__list-container {
+    width: 80%;
+    min-height: 100%;
+    margin: 30px;
+}
+
+.coupon__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.input-wrapper {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    width: 280px;
+    height: 80%;
+    outline: none;
+    padding: 10px;
+    font-size: 0.7em;
+    background-color: #fafaf7;
+    border-radius: 6px;
+    border: 1px solid #d0d7e1;
+}
+
+.update_btn,
+.Subscribe-btn {
+    height: 80%;
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: #e74105;
+    transition: all 0.3s;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+  .Subscribe-btn:hover {
+    color: white;
+}
+  
+.Subscribe-btn:hover .arrow {
+    margin-right: 0;
+    animation: jello-vertical 0.9s both;
+    transform-origin: left;
+}
+
+.Subscribe-btn:active {
+    transform: scale(0.9);
+}
+
+.cart__totals-table {
+    width: 50%;
+    margin-top: 80px;
+}
+
+.checkout__btn {
+    background: #e74105;
+    padding: 10px;
+    color: #fffefe;
+    border-radius: 10px;
+}
+
+/* =========================================== FOOTER ===================================== */
+.footer___section {
+    background: #29013b;
+}

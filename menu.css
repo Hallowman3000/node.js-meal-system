@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+/* ======================================= NAVBAR ============================================ */
+
+.navbar__section {
+    background-color: #29013b;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu__nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__logo #logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.nav__logo h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#logo_link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav__logo h1 span {
+    color: #e74105;
+}
+
+.links__container {
+    height: 100px;
+    width: 500px;
+    align-content: center;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__links #link {
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav__links #link a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 500ms ease-in-out;
+}
+
+.nav__links #link a:hover {
+    padding: 5px;
+    border-bottom: solid #e74105 3px;
+}
+
+.nav__buttons {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart__btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: #e74105;
+}
+
+.cart__btn i {
+    font-size: 1.4rem;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.logOut__btn {
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    width: 130px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    background-color: #e74105;
+    color: #ffffff;
+    overflow: hidden;
+    transition: 400ms ease-in-out;
+}
+
+.logOut__btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 130px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #212121;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.logOut__btn:hover::before {
+    scale: 3;
+}
+  
+.cart__btn:hover,
+.logOut__btn:hover {
+    color: #fffefe;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+  
+.logOut__btn:active {
+    scale: 1;
+}
+
+/* =================================== HERO SECTION ======================== */
+.hero__section {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/images/hero-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__container {
+    height: 100%;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__text {
+    align-content: center;
+    color: #ffffff;
+}
+
+.hero__text #hero__title {
+    font-size: 5rem;
+}
+
+#hero__description {
+    font-size: 1.3rem;
+}
+
+.hero_search {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__form button {
+    border: none;
+    background: none;
+    color: #e74105;
+    font-size: 1.2rem;
+}
+
+.hero__form {
+    position: relative;
+    height: 30%;
+    width: 30%;
+    align-content: center;
+    border-radius: 30px;
+    border: solid #e74105 1px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-inline: 0.8em;
+    background: #ffffff;
+    transition: 0.5s ease;
+}
+
+.hero__form #hero__input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    /* background: #ffffff; */
+}
+
+.hero__form:before {
+    content: "";
+    position: absolute;
+    background: #e74105;
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform 0.3s ease;
+}
+
+.hero__form:focus-within {
+    border-radius: 0px;
+}
+
+.hero__form #hero__input {
+    outline: none;
+}
+
+.hero__form:focus-within:before {
+    transform: scale(1);
+}
+
+/* =========================================== MENU CARDS ===================================== */
+.menu__cards-section {
+    /* Adjust height */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Adjust layout to stack elements vertically */
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.menu__cards-container {
+    width: 80%;
+    overflow: hidden; /* Hide any overflowing content */
+    padding-bottom: 40px; /* Add padding to contain pagination */
+}
+
+.categories {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    align-content: center;
+}
+
+.categories__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.categories__buttons #category__btn {
+    padding: 1em;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    height: 50%;
+    width: 10%;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    background-color: #e74105;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.categories__buttons #category__btn::before {
+    position: absolute;
+    content: "";
+    background: #34024b;
+    width: 228px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: 400ms ease;
+}
+
+.categories__buttons #category__btn:hover::before {
+    top: -30px;
+    left: -30px;
+}
+
+.menu__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.menu__card {
+    background: #ffcaa6;
+    border-bottom: solid 3px;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0);
+    transition: 400ms ease-in-out;
+    height: 530px;
+    border-radius: 0.5rem;
+}
+
+.menu__card:hover {
+    transform: scale(1.05);
+}
+
+.card__img {
+    object-fit: cover;
+    width: 100%;
+    height: 40%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.card__content {
+    padding: 10px;
+}
+
+.card__rate,
+.card__title,
+.card__price {
+    color: #970505;
+    font-weight: 700;
+}
+
+.card__rate {
+    font-size: 1.2rem;
+}
+
+.card__title {
+    font-size: 2rem;
+}
+
+.card__ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card__description {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--font-color-2);
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+}
+
+.view-more {
+    color: #e74105;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.view-more:hover {
+    color: #970505;
+    text-decoration: underline;
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card__price {
+    font-size: 1.4rem;
+}
+
+.card__btn {
+    padding: 0.5rem 1rem;
+    background: #e74105;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+.card__btn:hover {
+    background-color: #34024b;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the pagination buttons */
+    gap: 10px;
+    padding: 20px;
+}
+
+.pagination__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: #e74105;
+    cursor: pointer;
+}
+
+.pagination__button.active {
+    background-color: #212121;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* =========================================== FOOTER ===================================== */
+.footer___section {
+    background: #29013b;
+}

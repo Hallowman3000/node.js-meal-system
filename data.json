@@ -1,0 +1,228 @@
+
+[
+    {
+        "id": 1,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Ugali",
+        "description": "A staple food made from maize flour, ugali is a dense, porridge-like dish that pairs well with stews and vegetables, providing a filling base for any meal.",
+        "price": 180
+    },
+    {
+        "id": 2,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Nyama Choma",
+        "description": "Meaning roasted meat, this Kenyan barbecue is typically made with goat or beef, seasoned simply and grilled over an open flame, resulting in smoky, tender bites.",
+        "price": 180
+    },
+    {
+        "id": 3,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 4,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 5,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 6,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Ugali",
+        "description": "A staple food made from maize flour, ugali is a dense, porridge-like dish that pairs well with stews and vegetables, providing a filling base for any meal.",
+        "price": 180
+    },
+    {
+        "id": 7,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Nyama Choma",
+        "description": "Meaning roasted meat, this Kenyan barbecue is typically made with goat or beef, seasoned simply and grilled over an open flame, resulting in smoky, tender bites.",
+        "price": 180
+    },
+    {
+        "id": 8,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 9,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 10,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 11,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Ugali",
+        "description": "A staple food made from maize flour, ugali is a dense, porridge-like dish that pairs well with stews and vegetables, providing a filling base for any meal.",
+        "price": 180
+    },
+    {
+        "id": 12,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Nyama Choma",
+        "description": "Meaning roasted meat, this Kenyan barbecue is typically made with goat or beef, seasoned simply and grilled over an open flame, resulting in smoky, tender bites.",
+        "price": 180
+    },
+    {
+        "id": 13,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 14,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 15,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 16,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Ugali",
+        "description": "A staple food made from maize flour, ugali is a dense, porridge-like dish that pairs well with stews and vegetables, providing a filling base for any meal.",
+        "price": 180
+    },
+    {
+        "id": 17,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Nyama Choma",
+        "description": "Meaning roasted meat, this Kenyan barbecue is typically made with goat or beef, seasoned simply and grilled over an open flame, resulting in smoky, tender bites.",
+        "price": 180
+    },
+    {
+        "id": 18,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 19,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 20,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 21,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Ugali",
+        "description": "A staple food made from maize flour, ugali is a dense, porridge-like dish that pairs well with stews and vegetables, providing a filling base for any meal.",
+        "price": 180
+    },
+    {
+        "id": 22,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Nyama Choma",
+        "description": "Meaning roasted meat, this Kenyan barbecue is typically made with goat or beef, seasoned simply and grilled over an open flame, resulting in smoky, tender bites.",
+        "price": 180
+    },
+    {
+        "id": 23,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 24,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    },
+    {
+        "id": 25,
+        "image": "https://i.pinimg.com/736x/68/97/44/689744ba6b6e455f3b2a3352bdd88a03.jpg",
+        "rate": 4.5,
+        "star": "⭐⭐⭐⭐",
+        "name": "Githeri",
+        "description": "A nutritious dish made of boiled maize and beans, often mixed with vegetables and sometimes spiced up with potatoes or meat.",
+        "price": 180
+    }
+]
